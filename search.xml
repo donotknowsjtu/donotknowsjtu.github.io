@@ -1,6 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>diary1</title>
+    <url>/2024/08/09/diary1/</url>
+    <content><![CDATA[<p>行路难行路难。</p>
+<p>最近一个月都在学习web开发相关，浑浑噩噩，基础不牢方向不知。</p>
+<p>从lnmp架构到docker再到html css js,再到vue springboot，不知道这一切做了是否有意义。预计要准备的国赛也是没有投入，小说倒是看了许多，时间完全浪费在日夜昏沉之间，前途更是迷茫不已。</p>
+<p>如今内卷弥漫，昨日水源上拼多多学长招聘，将11116、竞业、被糟蹋的健康当作理所当然，并认为做牛做马内卷是脱离舒适圈在努力打拼，楼中不乏学长评判指责。</p>
+<p>晚上又看了一个up主以第二人称视角讲解蹲监狱罪犯的生活——每天5点起9点睡，睡觉不能关灯，吃饭不超过30分钟，每天除了观看教育视频和新闻联播就是进行体力劳动如踩缝纫机等。唉，何曾相似，其实高中生活又何尝不是如此，以后如果进了类似拼多多的大厂，平时早出晚归，入睡深夜，无空闲时间，周末加班，每天除了工作别无其它想法又何尝不是身处牢笼之中。</p>
+<p>再看这一年，浑浑噩噩不知何所思，似乎找到了兴趣，但又不知未来在何处。</p>
+<p><img src="image/diary1/1723137285025.png" alt="1723137285025"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary10</title>
+    <url>/2024/08/31/diary10/</url>
+    <content><![CDATA[<p>今天学习shell</p>
+<h2 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h2><p>.sh 是bourne shell的缩写，是unix系统的原始可执行文件的拓展名。</p>
+<p>bash是Bourne again shell的缩写, 是shell的超集。</p>
+<p>从命名可以明显看出，bash晚于shell，兼容shell</p>
+<p>我今天学习的是bash的shell脚本</p>
+<h3 id="让shell可执行"><a href="#让shell可执行" class="headerlink" title="让shell可执行"></a>让shell可执行</h3><p>commond: chomd +x 文件，其中x有u:user 、g:group 、 o:other 、a:all  、x:默认为all，这五种选择。</p>
+<p>含义是赋予用户执行脚本文件的权限，输入命令后可观察到.sh脚本文件名的颜色变绿，说明可以执行脚本文件。</p>
+<ul>
+<li>[ ] 对于非全局的脚本文件，需要在脚本目录中输入./文件名.sh，来执行脚本</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary2</title>
+    <url>/2024/08/09/diary2/</url>
+    <content><![CDATA[<p>周五，下午打球，今天把javaweb的vue部分看完，前端算是看完大半。</p>
+<p>晚上九点多躺在床上看小说没有拿手机，我爸妈姑都给我发消息打电话问我怎么了、为啥不回信息，感觉明明成年了还是跟小屁孩一样。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary4</title>
+    <url>/2024/08/12/diary4/</url>
+    <content><![CDATA[<p>周一，阴。</p>
+<p>凌晨毛给我发信息说打算九月初来上海看埃及展顺便来学校看看。</p>
+<p>今早六点多梦到身上缠了一条蛇惊醒，又睡至11点多。</p>
+<p>怀疑是11和12号这两天看恐怖复苏看太多了，几乎一直在看。</p>
+<p>今天也没学习什么，晚上和帅帅约定明天安排，本来想预约埃及展，结果发现上海博物馆要提前好久预约，遂作罢。帅帅要带他妹妹一起来玩，但是他妹妹有其它安排不和我们一起。不过还好不是一起，如果她来我估计还要买一些纪念品，毕竟不可能只给帅帅纪念品不给随行人士，不过每天还是要去纪念品店买一点给她。</p>
+<p>今晚早点睡，明天估计要在外面逛一天。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary5</title>
+    <url>/2024/08/13/diary5/</url>
+    <content><![CDATA[<p>周二，今天带帅帅参观校园。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary6</title>
+    <url>/2024/08/21/diary6/</url>
+    <content><![CDATA[<p><em>此篇记录一下昨天并且补充一下前一段缺失的日记。</em></p>
+<p>周二，阴。</p>
+<p>今天回学校了，前面一周都陪家人在河南旅游，主要去了洛阳白马寺、龙门石窟，栾川鸡冠洞、老君山。老君山很陡，云雾缭绕如同仙境。</p>
+<p>不在学校的这几天老叶来上海了，还是有点怕他，不是很想见他，帮他预约了交大和复旦，剩下就没管他了。</p>
+<p>今天也是黑猴上线第一天，可是我买不起，遂作罢，而且我发现游戏对我的吸引力越来越弱了，我还是喜欢自己做创造者，玩游戏终究要被别人的规则约束，我并不喜欢这种感觉。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary3</title>
+    <url>/2024/08/12/diary3/</url>
+    <content><![CDATA[<p>周日，晴</p>
+<p>今天从凌晨两点看小说《恐怖复苏》看到下午八点多，中间睡了八个小时左右，不得不说真好看，叙事场景构思都是一流，人物刻画详细。</p>
+<p>今天上午跟爸妈定好周四去洛阳玩，帅帅也约定下周二来玩，感觉下周要破费，没法跟学姐约球了。</p>
+<p>晚上意外发现六七好像真的是姐姐，之前一直以为是温柔南梁哥哥（bushi）。</p>
+<p>今天vue脚手架看到router了，前端后端工程项目进行得有点起色，但是大部分内容还是晕晕乎乎的。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary7</title>
+    <url>/2024/08/21/diary7/</url>
+    <content><![CDATA[<p>周三，大雨。</p>
+<p>今天睡了一天，还是太懒散了，下午起来学一下数据预处理，国赛还是得老老实实学，不过确实很有用，我能感觉到这些知识以后一定会用上。</p>
+<p>下午暑期科研实习的导师发信息问有没有什么不懂的地方可以指出，讲真的，我确实不太想搞了，强化学习我还是太早了，目前非常忙，我估计要再等个两个月我才有空学强化学习，现在没空管这个项目。</p>
+<p>下午航模队吴老师发信息邀请加入新群，但是大群里没有发二维码，我怀疑是因为一部分大群的同学不算作正式队员，所以老师不希望都加新群里，但是我不想参加航模队了，我觉得这个社团虽然很有魅力，但是不是我目前渴望的。不过社团还是很有前景的，以后无人机一定是城市发展的主要方向之一，从送货到交通，这是一个很有潜力和前景的方向。但是总之我现在还是没有太大的兴趣。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary9</title>
+    <url>/2024/08/30/diary9/</url>
+    <content><![CDATA[<p>周五，晴。</p>
+<p>好久没更了，最近因为室友回来了一个，所以作息好了一些也更现充了一点。</p>
+<p>今天上午睡觉（晕），下午看了《通往夏天的隧道，再见的出口》的电影，比较短，一个小时十分钟左右，但是很好看，没有刀的情节、很美好。</p>
+<p>放几张图片吧</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">  
+  <div style="width: calc(50% - 20px); margin: 10px; border: 2px solid #ccc; padding: 5px;">  
+    <img src="http://donotknowsjtu.top/image/tunnel1.jpg" alt="Tunnel 1" style="width: 100%; height: auto;">  
+  </div>  
+  <div style="width: calc(50% - 20px); margin: 10px; border: 2px solid #ccc; padding: 5px;">  
+    <img src="http://donotknowsjtu.top/image/tunnel2.jpg" alt="Tunnel 2" style="width: 100%; height: auto;">  
+  </div>
+
+<div style="width: calc(50% - 20px); margin: 10px; border: 2px solid #ccc; padding: 5px;">  
+    <img src="http://donotknowsjtu.top/image/tunnel3.jpg" alt="Tunnel 3" style="width: 100%; height: auto;">  
+  </div>  
+  <div style="width: calc(50% - 20px); margin: 10px; border: 2px solid #ccc; padding: 5px;">  
+    <img src="http://donotknowsjtu.top/image/tunnel4.jpg" alt="Tunnel 4" style="width: 100%; height: auto;">  
+  </div>
+
+<div style="width: calc(50% - 20px); margin: 10px; border: 2px solid #ccc; padding: 5px;">  
+    <img src="http://donotknowsjtu.top/image/tunnel5.jpg" alt="Tunnel 5" style="width: 100%; height: auto;">  
+  </div>  
+  <div style="width: calc(50% - 20px); margin: 10px; border: 2px solid #ccc; padding: 5px;">  
+    <img src="http://donotknowsjtu.top/image/tunnel6.jpg" alt="Tunnel 6" style="width: 100%; height: auto;">  
+  </div>  
+</div>
+
+<p>这次采用了md内嵌html代码的方式来放入图片，应该不会像之前一样无法加载出来图片。（更新一下，刚刚还是没法加载图片，分析了半天才发现是图片链接写错了，我的网站没有https协议，结果写成了https：//    改完就可以啦）</p>
+<p>晚上和生科的同学打了快三个小时球，还见到了b站上的up主（Michael范同学），电院那边好多球技高的大佬，感觉晚上可以随机抓取大佬练球。生科的同学直板基本功非常扎实，还教了我直拍横打，下次多找他打球。</p>
+<p>晚上继续看cs61a，现在算是回归基础，扎扎实实学，前面搞了一个多月的前后端，虽然有一点收获，但还是先打好基础吧。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary8</title>
+    <url>/2024/08/23/diary8/</url>
+    <content><![CDATA[<p>周五 晴</p>
+<p>今早和一个材料的博士学长在电院打球，学长水平比较差，下次还是找环境的那个学姐打球吧。</p>
+<p>下午睡了好久，今天思政周老师给我发信息，说的事是和我过去12年追求的事情相关的，今天是8.23，又是这个日期，在这个日期上发生了好多大事，但是这次我不想管了。人生很短，有些无意义的琐事操碎了心，我接下来还有更重要的事情要做。</p>
+<p>今天应该能把神秘复苏看完，确实是很好的一本书，至少作者对于死亡的理解很有新意。</p>
+<p><em>刚刚忘了一些，补充一下：</em></p>
+<p>今天一个室友应该坐上回国的飞机了，我估计明天就回来了，寝室楼也变得吵起来了，还是好希望能有一个安静的环境。</p>
+<p>还有一件事忘了，想不起来不写了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>essay1</title>
+    <url>/2024/08/23/essay1/</url>
+    <content><![CDATA[<p><strong><em># 书评：《神秘复苏》  原名：《恐怖复苏》 小说作者：佛前献花</em></strong></p>
+<p><strong><em># 类型：恐怖、末世、拯救、中二（略微）</em></strong></p>
+<p>小说一共1567章，共五百万字，讲述了在一个灵异复苏的世界，主角杨间驾驭厉鬼、寻找灵异的真相并且救赎世界的故事。小说分为《如坠地狱》、《此世乃无间》、《持饿鬼身，行菩萨事》、《结尾卷》四卷，作者没有明确分卷，不过总体来看还是起承转合。</p>
+
+<p>我觉得小说最大亮点就是情节紧凑和作者对死亡的思考，小说中灵异发生一环扣一环，以杨间的视角，从敲门鬼开始如同多米诺骨牌崩塌，事件一个连接下一个，几乎无水的地方，可能美中不足的情节就是小说末端总部和国外的对抗存在水字数的环节，这一段情节也是我全书唯一没有仔细阅读直接扫过的部分，但是这一段也举足轻重，如果不是对抗导致恶鬼复苏，杨间也不会继续控制新的鬼，后面解决灵异复苏也很难实现。</p>
+
+<p><p>作者对于死亡的认知是记忆的消失和人格的改变，当然人格什么的太过玄幻，我并不赞同，我现在感觉人的存在应该分为两部分，一部分是肉体，另一部分是神经网络，其实两者本质是附属关系，但是神经元的特殊性让电信号在肉体的一小部分发生有规律的作用进而形成了思维，换句话说，我感觉人的本体应该就是无数神经元组成的网络，记忆则是类似电脑中的寄存器，只是某些特殊分化的神经元罢了，记忆＋思考方式才是本质。</p>
+<p><p>换句话说，如果把一个人的记忆保存下来，在构建一个相同的大脑皮层，那么这就是一个缺失了身体的本人。思考方式就是函数，也就是机器学习里的sigmoid函数，外界环境和记忆是输入，至于输出完全是一个随机的概率行为，这个输出又会进一步影响函数，比如人接触新事物会建立新突触。这件事也是受到作者的启发，不过还是多谈谈这本书，毕竟是书评。</p>
+<p><p><strong><i>摘录一部分比较震撼的片段，摘录的都是结尾的，主要是因为书太长，看的时间比较长（将近两周），前面的懒得找了。</p>
+<p><strong><strong>*</strong></strong>行，00：30了，这次书评就到这了，我也得早点休息明天继续准备国赛。<strong><strong>*</strong></strong></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2024/06/28/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -15,9 +157,122 @@
 ]]></content>
   </entry>
   <entry>
+    <title>study1</title>
+    <url>/2024/08/24/study1/</url>
+    <content><![CDATA[<h1 id="maven学习"><a href="#maven学习" class="headerlink" title="maven学习"></a>maven学习</h1><p>定义：java项目管理工具</p>
+<p>工作流程：</p>
+<p><img src="image/study1/1724496968138.png" alt="1724496968138"></p>
+<p>pom：project object model 定义：pom是一个maven的工作配置文件，指定了maven的工作规则。</p>
+<p><img src="image/study1/1724507069336.png" alt="1724507069336"></p>
+<h2 id="基于idea编辑器的maven的基本使用"><a href="#基于idea编辑器的maven的基本使用" class="headerlink" title="基于idea编辑器的maven的基本使用"></a>基于idea编辑器的maven的基本使用</h2><h3 id="引用依赖"><a href="#引用依赖" class="headerlink" title="引用依赖"></a>引用依赖</h3><p>在pom.xml中添加如下代码块，重新加载</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;ch.qos.logback&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;logback-classic&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;1.5.6&lt;/version&gt;</span><br><span class="line">      </span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+<p>groupId：包所有组织名称</p>
+<p>artifactId：包名称</p>
+<p>version：包版本</p>
+<h3 id="排除依赖"><a href="#排除依赖" class="headerlink" title="排除依赖"></a>排除依赖</h3><p>在pom.xml中添加如下代码块，重新加载</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;exclusions&gt;</span><br><span class="line">    &lt;exclusion&gt;</span><br><span class="line">        &lt;groupId&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;</span><br><span class="line">        </span><br><span class="line">        &lt;/artifactId&gt;</span><br><span class="line">    &lt;/exclusion&gt;</span><br><span class="line">&lt;/exclusions&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="依赖范围"><a href="#依赖范围" class="headerlink" title="依赖范围"></a>依赖范围</h3><p>依赖的jar包默认全项目范围，可以在dependency中限制范围</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// for example:compile(默认)，test ,provided, runtime</span><br><span class="line">&lt;scope&gt; test&lt;/scope&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>study2</title>
+    <url>/2024/08/25/study2/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>title:test</title>
+    <url>/2024/08/08/title-test/</url>
+    <content><![CDATA[<p>this is a test text.Because i donot know how hexo works, i need to test.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>第一个文章</title>
     <url>/2024/06/28/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<p>准备好和我一起旅行了吗？</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary11</title>
+    <url>/2024/09/01/diary11/</url>
+    <content><![CDATA[<p>周日，晴。最近连续高强度打球和跑步明显改善了我的精神状态，昨天晚上连续深度睡了十个小时，感觉整个人都非常舒服。今天上午和一个维纳的研二学长打了两个半小时球，然后又睡两个小时左右（晕，还是太闲了）。</p>
+<p>学长很nice并且非常亲切，基本功也很扎实，还是老乡，本科在合工大，这又增加了我们的亲近感。</p>
+<p>不过今天去的时候遇到了农生的博士学长，他好像是请的私教培训，他之前一直跟我说不打球了，看来还是有热情的，下次找他约球。</p>
+<p>中午和微纳的学长吃了煲仔饭，他还说可以把他师姐送他的电动车出我，一起去修车铺看了下，发现三个电池电压少了百分之八左右，电瓶有可能要换一下，三百换电瓶还是有点亏吧，感觉还是再看看查查资料再说。然后我请他吃了DQ（diary queen），提拉米苏口感还不错哦，但是巧克力要是再多一点就好了。</p>
+<p>学长说他本科学物理的，跨保到电院，希望出国读物理博士，确实很强，还是多社交多交流舒服，不能在宿舍窝着发霉。</p>
+<p>晚上开始看cs61L，c++转码必学！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary12</title>
+    <url>/2024/09/03/diary12/</url>
+    <content><![CDATA[<p>周二，雨。</p>
+<p>最近一直在忙着搞etherpad，今天下午17：20成功实现，过程艰辛复杂都是泪，服务器换了好多次操作系统，gpt、文心一眼问到冒烟，blog也干没了，不过晚一点我会放回去。不过好消息是确实学到了很多，先不提多学了很多命令，最关键是加深了我对前后端的联系和容器这一概念的理解，还有很关键的一点是我成功实现了vps的海外代理，总之我觉得花了将近两天时间很值得，还是说明项目驱动学习的重要性。（不过没人可以请教，全靠查教程和问AI也真的是痛苦）另外最近英语水平提升不少。</p>
+<p>打算单独开个knowledge介绍一下etherpad的配置，目前确实没有太好的教程，现存教程太古老。</p>
+<p>不过既然是今天的日记，还是稍微记一下今天的流水帐吧。</p>
+<p>今天上午不到八点就爬起来了，最近晚上睡眠都短了很多，而且蚊子又出现了，好烦。我怀疑是我下午睡多了导致晚上睡眠时长减少，昨天晚上睡得很晚，起得很早（将近六点），看来下午还是不能睡觉，至少不能上床睡觉。</p>
+<p>上午换了好几个操作系统，又试了不少方法，总之是折腾了好久，中午没心情出去吃就随便吃了点外卖。</p>
+<p>下午整整一下午总算搞定，然后去食堂吃的老干妈炒饭（难吃还贵），回来躺床上睡着了（猪），刚刚爬起来把日记和教程写写。</p>
+<p>马上就要国赛开始了，还是有点摆烂（晕）。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>knowledge1</title>
+    <url>/2024/09/03/knowledge1/</url>
+    <content><![CDATA[<h1 id="etherpad共享文档教程"><a href="#etherpad共享文档教程" class="headerlink" title="etherpad共享文档教程"></a>etherpad共享文档教程</h1><p><strong>首先声明：本文档不会一步一步指导操作，因为太浪费我的时间，主要介绍思路，以及当前（2024.9.4）遇到的问题的解决方案，详细命令可以请教AI</strong></p>
+<h2 id="什么是etherpad"><a href="#什么是etherpad" class="headerlink" title="什么是etherpad"></a>什么是etherpad</h2><div style="border: 2px solid #000; padding: 20px; font-size: 0.75em; line-height: 1.5; /* 调整行高以改善可读性 */ width: 60%; /* 根据需要调整宽度 */ margin: 0 auto; /* 水平居中容器 */">  
+  Etherpad allows you to edit documents collaboratively in real-time, much like a live multi-player editor that runs in your browser. Write articles, press releases, to-do lists, etc. together with your friends, fellow students or colleagues, all working on the same document at the same time.
+
+  All instances provide access to all data through a well-documented API and support import/export to many major data exchange formats. And if the built-in feature set isn't enough for you, there's tons of plugins that allow you to customize your instance to suit your needs.
+
+  You don't need to set up a server and install Etherpad in order to use it. Just pick one of the publicly available instances that friendly people from everywhere around the world have set up. Alternatively, you can set up your own instance by following our installation guide.
+
+</div>
+
+<p>上面直接粘贴的<a href="https:etherpad.org" title="click">官网</a>的介绍，简言之就是一个共享文档的开源项目。</p>
+<h2 id="从git开始"><a href="#从git开始" class="headerlink" title="从git开始"></a>从git开始</h2><p>主流的安装方式应该是git和docker两种，但是docker的etherpad的库好像有问题，而且国内目前docker的墙太厚了，镜像站也不好找，所以docker虽然方便但是没法直接用，因此我这里选择git源码编译运行。</p>
+<p>首先在一个合适的目录新建一个etherpad的工作目录</p>
+<p>cd 到工作目录，再git clone源码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/ether/etherpad-lite.git</span><br></pre></td></tr></table></figure>
+<p>这里阿里云的服务器不对github设墙，所以我可以直接git源码，如果你的服务器无法访问github，那么可以选择本地先git或者下载zip源码包，然后ssh上传到服务器上解压缩。</p>
+<p>然后就是搭建node.js的环境，这也是etherpad的本地运行环境。</p>
+<h2 id="可怕的node环境"><a href="#可怕的node环境" class="headerlink" title="可怕的node环境"></a>可怕的node环境</h2><p>由于我原本装的服务器操作系统是centos7.6（官方已经暂停维护），对于node18及以上的版本都不支持（etherpad需要pnpm构建工具，npm低版本不支持pnpm），然后我换了好几个操作系统（centos stream、docker（阿里云的奇怪设置，docker是软件系统，但是操作系统没明说我怀疑还是centos系列），debian）都失败了。最后我先选择了ubuntu22.04（阿里云配置），然后将其升级到了ubuntu24版本。不得不说，阿里云的轻量应用服务器这一点是真的坑，不仅支持的系统少而且老旧，还不允许使用其它镜像（但是ecs云服务器可以使用其它镜像）。这里的升级系统的操作就不讲了，不是很复杂，请自行咨询AI。</p>
+<p>好在ubuntu24没有让我失望，成功安装了nvm（非最新版本），然后我又升级到nvm（0.4版本），再设置nvm、npm镜像源，然后下载了node18.20.4（node20不知道为什么无法下载，我怀疑是腾讯的镜像源没有引入。）</p>
+<p>现在几乎配好了全部node环境（后面还涉及到一部分的ts环境）</p>
+<p>这里有个坑，虽然设置了nvm和npm镜像源，但是还是有可能（记不太清了）无法下载node（不知道为什么），所以这里可以给vps挂上代理，这里安利一个教程（<a href="https://v2raya.org/">v2rayA - 文档</a>）</p>
+<h2 id="容器启动"><a href="#容器启动" class="headerlink" title="容器启动"></a>容器启动</h2><p><strong>进入工作目录</strong>，由于最新版的etherpad使用了TypeScript作为代码基础，所以还得将TypeScript代码编译成JavaScript代码，再进行运行。</p>
+<p>安装tsc（typescript编译器）：<code>npm install -g typescript</code></p>
+<p>初始化（创建tsconfig.json）：<code>tsc --init</code></p>
+<p>编译：<code>tsc</code></p>
+<p>启动：<code>node dist/node/server.js</code></p>
+<p>现在你可以在IP:9001默认端口查看到你的etherpad服务了，不过进程会随着终端的关闭而关闭，因此我们需要将其改成守护进程（daemon）。</p>
+<p>这里我选择使用PM2来管理进程</p>
+<p>先关闭etherpad（ctrl + c）</p>
+<p>全局安装：<code>npm install -g pm2</code></p>
+<p>启动：<code>pm2 start src/node/server.js --name etherpad</code></p>
+<p>生成开机自启脚本（可选）：<code>pm2 startup</code></p>
+<p>保存当前进程列表：<code>pm2 save</code></p>
+<p>这里已经成功实现etherpad的守护进程的运行了，更多pm2命令请自行查阅</p>
+<p>接下来我们用nginx来绑定域名并转发端口</p>
+<h2 id="nginx转发端口"><a href="#nginx转发端口" class="headerlink" title="nginx转发端口"></a>nginx转发端口</h2><p>下载nginx（包管理工具会默认下载到/etc文件夹中），你也可以选择源码编译安装，这里省事就直接apt下载安装了。</p>
+<p>编辑nginx配置文件（这也是nginx的核心工作指导文件）：<code>sudo nano /etc/nginx/sites-available/etherpad</code></p>
+<p>复制粘贴以下内容，注意替换其中的域名：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name example.com;  # 替换为您的域名</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://localhost:9001;  # Etherpad运行的端口</span><br><span class="line">        proxy_set_header Host $host;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_set_header X-Forwarded-Proto $scheme;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>重启新的nginx配置：<code>sudo ln -s /etc/nginx/sites-available/etherpad /etc/nginx/sites-enabled/</code></p>
+<p>检测nginx配置文件格式：<code>sudo nginx -t</code></p>
+<p>重新加载nginx：<code>sudo systemctl reload nginx</code></p>
+<h2 id="congratulations！"><a href="#congratulations！" class="headerlink" title="congratulations！"></a>congratulations！</h2><p>现在请直接通过域名访问你的etherpad网页吧！congratulations！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary13</title>
+    <url>/2024/09/07/diary13/</url>
+    <content><![CDATA[<p>国赛失败，说多了都是泪，太累了，感觉是我这19年来经历过的压力最大最无力的三天。</p>
+<p>不过确实学到了很多，尤其是对于接口的理解。</p>
+<p>这几天精神状态都不太好，今晚调整一下，明早去打球，接下来开学前的几天不再搞高强度的了，确实累了，就写这么多吧</p>
+<p>///// 这里放一下比赛写的文档吧，算是小小纪念一下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">this is a test document by donotknow.</span><br><span class="line">this is our 2024 MCM travel.</span><br><span class="line">目标：选择合适的农作物，制定策略</span><br><span class="line">条件：1201亩 34块</span><br><span class="line">平旱地，梯田，山坡地 每年一季</span><br><span class="line">水浇地 每年一季水稻 or 两季蔬菜</span><br><span class="line">每个大棚 0.6亩 作用：每年都可以种植两季作物。</span><br><span class="line">16个普通大棚适宜每年种植一季蔬菜和一季食用菌</span><br><span class="line">4个智慧大棚适宜每年种植两季蔬菜。</span><br><span class="line">同一地块（含大棚）每季可以合种不同的作物。</span><br><span class="line"></span><br><span class="line">要求：</span><br><span class="line">1.小于亩产量</span><br><span class="line">1.每种作物在同一地块（含大棚）都不能连续重茬种植</span><br><span class="line">2.每个地块（含大棚）的所有土地三年内至少种植一次豆类作物</span><br><span class="line">3.每种地块只能种植相应的作物</span><br><span class="line"></span><br><span class="line">**以上六个约束条件中后两个约束条件可以不考虑**</span><br><span class="line"></span><br><span class="line">数据集：</span><br><span class="line">excel1：地块名称	地块类型 地块面积/亩	说明</span><br><span class="line">excel2：sheet1 种植地块（同地块名称）作物编号 作物名称 作物类型</span><br><span class="line">种植面积/亩 种植季次</span><br><span class="line">sheet2 序号 作物编号 作物名称	地块类型 种植季次 亩产量/斤</span><br><span class="line">种植成本/(元/亩)	销售单价/(元/斤)</span><br><span class="line"></span><br><span class="line">问题1 ：假设：各种农作物的销售量、种植成本、亩产量和销售价格不变</span><br><span class="line"></span><br><span class="line">问题一可以采用线性规划模型，有41作物，34个地块</span><br><span class="line">决策变量</span><br><span class="line">目标：实现利益最大化（W） max（W）</span><br><span class="line">第一情况（pi）pi&lt;=pibefore</span><br><span class="line">变量：</span><br><span class="line">    作物名称：变量名：i范围：1，2，3，......,41</span><br><span class="line">     季度：变量名： s 范围：1,2,3,4,5,...,14季</span><br><span class="line">     地块名称：变量名：k 范围：1,2,...,34</span><br><span class="line">      亩数：x</span><br><span class="line">接口：</span><br><span class="line">     作物类型（作物名称）</span><br><span class="line">     地块类型（作物名称）</span><br><span class="line">     地块类型（地块名称）</span><br><span class="line">     #</span><br><span class="line">     地块面积（地块名称）</span><br><span class="line">     亩产量（作物名称，地块名称）</span><br><span class="line">     种植成本（作物名称）</span><br><span class="line">     销售单价（作物名称）</span><br><span class="line">     find亩数（季度， 作物名称， 地块名称）</span><br><span class="line">     作物售量（作物名称，亩数，地块名称）</span><br><span class="line">     作物产量（作物名称，季度，亩数）</span><br><span class="line">     单个作物总亩数（作物名称）</span><br><span class="line">接口：</span><br><span class="line">     三个约束条件对应三个函数</span><br><span class="line">    1. 约束条件一（季度，地块名称 ）：</span><br><span class="line">       lis_豆类=[黄豆,黑豆,红豆,绿豆,爬豆，豇豆刀豆芸豆]</span><br><span class="line">        if 季度 &gt; 5:</span><br><span class="line">            for i in range（季度-5， 季度＋1）：</span><br><span class="line">                find亩数（i，for j in lis_豆类，地块名称）.any</span><br><span class="line">                 2. 约束条件二（作物名称，地块名称，季度）:</span><br><span class="line">                    通过find亩数函数（）查找到上一季度亩数，</span><br><span class="line">                    if 季度 &gt; 1:</span><br><span class="line">    if find亩数 &gt; 0:</span><br><span class="line">                        return false</span><br><span class="line">                    else</span><br><span class="line">                 3.约束条件三（作物名称， 地块名称）：</span><br><span class="line">                 if interface3(地块名称) in interface2(作物名称):</span><br><span class="line">                     return true</span><br><span class="line">                 else:</span><br><span class="line">                     return false</span><br><span class="line">                     求当前情况的利润，和之前保存的最高利润比较，如果更高，保存</span><br><span class="line">                 找出最优方案（利润最高）：</span><br><span class="line">                 总利润w=亩数乘利润</span><br><span class="line">                 使w最大</span><br><span class="line">q</span><br><span class="line">q</span><br><span class="line">      4.约束条件四(地块名称，作物名称)：</span><br><span class="line">        if 地块类型（地块名称） in [平旱地，梯田，山坡地]：</span><br><span class="line">                 if 作物类型（作物名称） in [粮食(豆类)， 粮食] and 作物名称 ！= “水稻”：</span><br><span class="line">                   return true</span><br><span class="line">             return false</span><br><span class="line">    5.约束条件五（地块名称，作物名称，季度）：</span><br><span class="line">      if地块类型（地块名称） == “水浇地”：</span><br><span class="line">        if 季度 % 2 == 0：</span><br><span class="line">           if 作物名称 == 水稻：</span><br><span class="line">              return ！find （地块名称， 季度-1， for 作物名称 in [水稻，豇豆刀豆芸豆土豆西红柿茄子菠菜 青椒菜花包菜油麦菜小青菜黄瓜生菜 辣椒空心菜黄心菜芹菜大白菜白萝卜红萝卜]</span><br><span class="line">           if 作物类型（作物名称） in 【蔬菜（豆类），蔬菜】：</span><br><span class="line">                return！find（地块名称，季度 -1，水稻】</span><br><span class="line">         return true</span><br><span class="line">       6.约束条件六（地块名称，作物名称，季度）：</span><br><span class="line">       if 地块类型（地块名称） == “水浇地”：</span><br><span class="line">          if 季度%2 == 1:</span><br><span class="line">             if 作物类型（作物名称） in 【蔬菜（豆类），蔬菜】：</span><br><span class="line">                 if 作物名称 in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                     return false</span><br><span class="line">          if 季度 % 2 == 0：</span><br><span class="line">               if 作物类型（作物名称）not in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                   return false</span><br><span class="line">        return true</span><br><span class="line">       7.约束条件七（地块名称，作物名称，季度）：</span><br><span class="line">       if 地块类型（地块名称） == “普通大棚”：</span><br><span class="line">          if 季度%2 == 1:</span><br><span class="line">             if 作物类型（作物名称） in 【蔬菜（豆类），蔬菜】：</span><br><span class="line">                 if 作物名称 in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                     return false</span><br><span class="line">             else：</span><br><span class="line">                 return false</span><br><span class="line">    if 季度 % 2 == 0：</span><br><span class="line">               if 作物名称 not in 【榆黄菇香菇白灵菇羊肚菌】：</span><br><span class="line">                   return false</span><br><span class="line">           return true</span><br><span class="line">       8. 约束条件八（地块名称，作物名称）：</span><br><span class="line">           if 地块类型（地块名称） == “智慧大棚”：</span><br><span class="line">              if 作物名称 in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                  return false</span><br><span class="line">             return true</span><br><span class="line"></span><br><span class="line">模型：地块 &gt;&gt; 季度  &gt;&gt; 作物类型 &gt;&gt; 种植亩数</span><br><span class="line">地块：54个地块</span><br><span class="line">季度：14个季度</span><br><span class="line">作物类型：41种</span><br><span class="line">种植亩数：x</span><br><span class="line"></span><br><span class="line">### 总利润 = 总收入 - 总成本</span><br><span class="line"></span><br><span class="line">总成本 = 种植成本（作物名称）* 单个作物总亩数（作物名称）</span><br><span class="line">总收入 =</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">接口函数：</span><br><span class="line">     interface1:输出作物类型（输入作物名称）</span><br><span class="line">     interface2:输出地块类型(列表)（作物名称）</span><br><span class="line">     interface3:输出地块类型（地块名称）</span><br><span class="line">     interface4:输出亩产量（作物名称，地块名称，季度）</span><br><span class="line">     interface5:输出种植成本（作物名称）</span><br><span class="line">     interface6:输出销售单价（作物名称）</span><br><span class="line">     interface7:输出地块面积（地块名称）</span><br><span class="line">    # interface8:输出find亩数（季度， 作物名称， 地块名称）</span><br><span class="line">     interface9:作物售量（作物名称）</span><br><span class="line">     interface10:种植季次（数字s）</span><br><span class="line">     interface11：地块名称（数字k）</span><br><span class="line">     interface12：作物名称（数字i）</span><br><span class="line">     interface13:作物产量（地块名称，作物名称，季度，亩数）</span><br><span class="line">     interface14:单个作物总亩数（作物名称）</span><br><span class="line">     interface15:地块类型（数字k）</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
 </search>
