@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>diary10</title>
-    <url>/2024/08/31/diary10/</url>
-    <content><![CDATA[<p>今天学习shell</p>
-<h2 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h2><p>.sh 是bourne shell的缩写，是unix系统的原始可执行文件的拓展名。</p>
-<p>bash是Bourne again shell的缩写, 是shell的超集。</p>
-<p>从命名可以明显看出，bash晚于shell，兼容shell</p>
-<p>我今天学习的是bash的shell脚本</p>
-<h3 id="让shell可执行"><a href="#让shell可执行" class="headerlink" title="让shell可执行"></a>让shell可执行</h3><p>commond: chomd +x 文件，其中x有u:user 、g:group 、 o:other 、a:all  、x:默认为all，这五种选择。</p>
-<p>含义是赋予用户执行脚本文件的权限，输入命令后可观察到.sh脚本文件名的颜色变绿，说明可以执行脚本文件。</p>
-<ul>
-<li>[ ] 对于非全局的脚本文件，需要在脚本目录中输入./文件名.sh，来执行脚本</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>announcement1</title>
-    <url>/2024/09/08/announcement1/</url>
-    <content><![CDATA[<h1 id="关于共享文档的indexUI的css未能成功加载的问题的声明"><a href="#关于共享文档的indexUI的css未能成功加载的问题的声明" class="headerlink" title="关于共享文档的indexUI的css未能成功加载的问题的声明"></a>关于共享文档的indexUI的css未能成功加载的问题的声明</h1><p>问题可见<a href="http://donotknowsjtu.top/docshare/" title="click">此处</a></p>
-<p>在<a href="https://metriver.top" title="click">菜菜</a>的提醒下，我意识到docshare版块在使用docshare.donotknowsjtu.top:3000访问时UI正常，即：加上端口号可以访问到正常的首页。</p>
-<p>由于我在服务器的3000端口运行docshare的主服务，然后使用nginx反向代理主机的80端口到3000端口，也就是说，不加上端口号理论上是通过nginx访问docshare，这里的nginx导致css无法加载出来？（刚刚测试了一下，发现不是这样，哪怕通过3000端口直接访问也是要使用nginx的）。</p>
-<p>目前需要访问正常的index需要在网址docshare.donotknowsjtu.top后加上:3000</p>
-]]></content>
-  </entry>
-  <entry>
     <title>diary1</title>
     <url>/2024/08/09/diary1/</url>
     <content><![CDATA[<p>行路难行路难。</p>
@@ -37,24 +13,27 @@
 ]]></content>
   </entry>
   <entry>
-    <title>diary11</title>
-    <url>/2024/09/01/diary11/</url>
-    <content><![CDATA[<p>周日，晴。最近连续高强度打球和跑步明显改善了我的精神状态，昨天晚上连续深度睡了十个小时，感觉整个人都非常舒服。今天上午和一个维纳的研二学长打了两个半小时球，然后又睡两个小时左右（晕，还是太闲了）。</p>
-<p>学长很nice并且非常亲切，基本功也很扎实，还是老乡，本科在合工大，这又增加了我们的亲近感。</p>
-<p>不过今天去的时候遇到了农生的博士学长，他好像是请的私教培训，他之前一直跟我说不打球了，看来还是有热情的，下次找他约球。</p>
-<p>中午和微纳的学长吃了煲仔饭，他还说可以把他师姐送他的电动车出我，一起去修车铺看了下，发现三个电池电压少了百分之八左右，电瓶有可能要换一下，三百换电瓶还是有点亏吧，感觉还是再看看查查资料再说。然后我请他吃了DQ（diary queen），提拉米苏口感还不错哦，但是巧克力要是再多一点就好了。</p>
-<p>学长说他本科学物理的，跨保到电院，希望出国读物理博士，确实很强，还是多社交多交流舒服，不能在宿舍窝着发霉。</p>
-<p>晚上开始看cs61L，c++转码必学！</p>
+    <title>announcement1</title>
+    <url>/2024/09/08/announcement1/</url>
+    <content><![CDATA[<h1 id="关于共享文档的indexUI的css未能成功加载的问题的声明"><a href="#关于共享文档的indexUI的css未能成功加载的问题的声明" class="headerlink" title="关于共享文档的indexUI的css未能成功加载的问题的声明"></a>关于共享文档的indexUI的css未能成功加载的问题的声明</h1><p>问题可见<a href="http://donotknowsjtu.top/docshare/" title="click">此处</a></p>
+<p>在<a href="https://metriver.top" title="click">菜菜</a>的提醒下，我意识到docshare版块在使用docshare.donotknowsjtu.top:3000访问时UI正常，即：加上端口号可以访问到正常的首页。</p>
+<p>由于我在服务器的3000端口运行docshare的主服务，然后使用nginx反向代理主机的80端口到3000端口，也就是说，不加上端口号理论上是通过nginx访问docshare，这里的nginx导致css无法加载出来？（刚刚测试了一下，发现不是这样，哪怕通过3000端口直接访问也是要使用nginx的）。</p>
+<p>目前需要访问正常的index需要在网址docshare.donotknowsjtu.top后加上:3000</p>
 ]]></content>
   </entry>
   <entry>
-    <title>diary3</title>
-    <url>/2024/08/12/diary3/</url>
-    <content><![CDATA[<p>周日，晴</p>
-<p>今天从凌晨两点看小说《恐怖复苏》看到下午八点多，中间睡了八个小时左右，不得不说真好看，叙事场景构思都是一流，人物刻画详细。</p>
-<p>今天上午跟爸妈定好周四去洛阳玩，帅帅也约定下周二来玩，感觉下周要破费，没法跟学姐约球了。</p>
-<p>晚上意外发现六七好像真的是姐姐，之前一直以为是温柔南梁哥哥（bushi）。</p>
-<p>今天vue脚手架看到router了，前端后端工程项目进行得有点起色，但是大部分内容还是晕晕乎乎的。</p>
+    <title>diary10</title>
+    <url>/2024/08/31/diary10/</url>
+    <content><![CDATA[<p>今天学习shell</p>
+<h2 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h2><p>.sh 是bourne shell的缩写，是unix系统的原始可执行文件的拓展名。</p>
+<p>bash是Bourne again shell的缩写, 是shell的超集。</p>
+<p>从命名可以明显看出，bash晚于shell，兼容shell</p>
+<p>我今天学习的是bash的shell脚本</p>
+<h3 id="让shell可执行"><a href="#让shell可执行" class="headerlink" title="让shell可执行"></a>让shell可执行</h3><p>commond: chomd +x 文件，其中x有u:user 、g:group 、 o:other 、a:all  、x:默认为all，这五种选择。</p>
+<p>含义是赋予用户执行脚本文件的权限，输入命令后可观察到.sh脚本文件名的颜色变绿，说明可以执行脚本文件。</p>
+<ul>
+<li>[ ] 对于非全局的脚本文件，需要在脚本目录中输入./文件名.sh，来执行脚本</li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -71,14 +50,34 @@
 ]]></content>
   </entry>
   <entry>
-    <title>diary13</title>
-    <url>/2024/09/07/diary13/</url>
-    <content><![CDATA[<p>国赛失败，说多了都是泪，太累了，感觉是我这19年来经历过的压力最大最无力的三天。</p>
-<p>不过确实学到了很多，尤其是对于接口的理解。</p>
-<p>这几天精神状态都不太好，今晚调整一下，明早去打球，接下来开学前的几天不再搞高强度的了，确实累了，就写这么多吧p</p>
-<p>///// 这里放一下比赛写的文档吧，算是小小纪念一下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">this is a test document by donotknow.</span><br><span class="line">this is our 2024 MCM travel.</span><br><span class="line">目标：选择合适的农作物，制定策略</span><br><span class="line">条件：1201亩 34块</span><br><span class="line">平旱地，梯田，山坡地 每年一季</span><br><span class="line">水浇地 每年一季水稻 or 两季蔬菜</span><br><span class="line">每个大棚 0.6亩 作用：每年都可以种植两季作物。</span><br><span class="line">16个普通大棚适宜每年种植一季蔬菜和一季食用菌</span><br><span class="line">4个智慧大棚适宜每年种植两季蔬菜。</span><br><span class="line">同一地块（含大棚）每季可以合种不同的作物。</span><br><span class="line"></span><br><span class="line">要求：</span><br><span class="line">1.小于亩产量</span><br><span class="line">1.每种作物在同一地块（含大棚）都不能连续重茬种植</span><br><span class="line">2.每个地块（含大棚）的所有土地三年内至少种植一次豆类作物</span><br><span class="line">3.每种地块只能种植相应的作物</span><br><span class="line"></span><br><span class="line">**以上六个约束条件中后两个约束条件可以不考虑**</span><br><span class="line"></span><br><span class="line">数据集：</span><br><span class="line">excel1：地块名称	地块类型 地块面积/亩	说明</span><br><span class="line">excel2：sheet1 种植地块（同地块名称）作物编号 作物名称 作物类型</span><br><span class="line">种植面积/亩 种植季次</span><br><span class="line">sheet2 序号 作物编号 作物名称	地块类型 种植季次 亩产量/斤</span><br><span class="line">种植成本/(元/亩)	销售单价/(元/斤)</span><br><span class="line"></span><br><span class="line">问题1 ：假设：各种农作物的销售量、种植成本、亩产量和销售价格不变</span><br><span class="line"></span><br><span class="line">问题一可以采用线性规划模型，有41作物，34个地块</span><br><span class="line">决策变量</span><br><span class="line">目标：实现利益最大化（W） max（W）</span><br><span class="line">第一情况（pi）pi&lt;=pibefore</span><br><span class="line">变量：</span><br><span class="line">    作物名称：变量名：i范围：1，2，3，......,41</span><br><span class="line">     季度：变量名： s 范围：1,2,3,4,5,...,14季</span><br><span class="line">     地块名称：变量名：k 范围：1,2,...,34</span><br><span class="line">      亩数：x</span><br><span class="line">接口：</span><br><span class="line">     作物类型（作物名称）</span><br><span class="line">     地块类型（作物名称）</span><br><span class="line">     地块类型（地块名称）</span><br><span class="line">     #</span><br><span class="line">     地块面积（地块名称）</span><br><span class="line">     亩产量（作物名称，地块名称）</span><br><span class="line">     种植成本（作物名称）</span><br><span class="line">     销售单价（作物名称）</span><br><span class="line">     find亩数（季度， 作物名称， 地块名称）</span><br><span class="line">     作物售量（作物名称，亩数，地块名称）</span><br><span class="line">     作物产量（作物名称，季度，亩数）</span><br><span class="line">     单个作物总亩数（作物名称）</span><br><span class="line">接口：</span><br><span class="line">     三个约束条件对应三个函数</span><br><span class="line">    1. 约束条件一（季度，地块名称 ）：</span><br><span class="line">       lis_豆类=[黄豆,黑豆,红豆,绿豆,爬豆，豇豆刀豆芸豆]</span><br><span class="line">        if 季度 &gt; 5:</span><br><span class="line">            for i in range（季度-5， 季度＋1）：</span><br><span class="line">                find亩数（i，for j in lis_豆类，地块名称）.any</span><br><span class="line">                 2. 约束条件二（作物名称，地块名称，季度）:</span><br><span class="line">                    通过find亩数函数（）查找到上一季度亩数，</span><br><span class="line">                    if 季度 &gt; 1:</span><br><span class="line">    if find亩数 &gt; 0:</span><br><span class="line">                        return false</span><br><span class="line">                    else</span><br><span class="line">                 3.约束条件三（作物名称， 地块名称）：</span><br><span class="line">                 if interface3(地块名称) in interface2(作物名称):</span><br><span class="line">                     return true</span><br><span class="line">                 else:</span><br><span class="line">                     return false</span><br><span class="line">                     求当前情况的利润，和之前保存的最高利润比较，如果更高，保存</span><br><span class="line">                 找出最优方案（利润最高）：</span><br><span class="line">                 总利润w=亩数乘利润</span><br><span class="line">                 使w最大</span><br><span class="line">q</span><br><span class="line">q</span><br><span class="line">      4.约束条件四(地块名称，作物名称)：</span><br><span class="line">        if 地块类型（地块名称） in [平旱地，梯田，山坡地]：</span><br><span class="line">                 if 作物类型（作物名称） in [粮食(豆类)， 粮食] and 作物名称 ！= “水稻”：</span><br><span class="line">                   return true</span><br><span class="line">             return false</span><br><span class="line">    5.约束条件五（地块名称，作物名称，季度）：</span><br><span class="line">      if地块类型（地块名称） == “水浇地”：</span><br><span class="line">        if 季度 % 2 == 0：</span><br><span class="line">           if 作物名称 == 水稻：</span><br><span class="line">              return ！find （地块名称， 季度-1， for 作物名称 in [水稻，豇豆刀豆芸豆土豆西红柿茄子菠菜 青椒菜花包菜油麦菜小青菜黄瓜生菜 辣椒空心菜黄心菜芹菜大白菜白萝卜红萝卜]</span><br><span class="line">           if 作物类型（作物名称） in 【蔬菜（豆类），蔬菜】：</span><br><span class="line">                return！find（地块名称，季度 -1，水稻】</span><br><span class="line">         return true</span><br><span class="line">       6.约束条件六（地块名称，作物名称，季度）：</span><br><span class="line">       if 地块类型（地块名称） == “水浇地”：</span><br><span class="line">          if 季度%2 == 1:</span><br><span class="line">             if 作物类型（作物名称） in 【蔬菜（豆类），蔬菜】：</span><br><span class="line">                 if 作物名称 in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                     return false</span><br><span class="line">          if 季度 % 2 == 0：</span><br><span class="line">               if 作物类型（作物名称）not in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                   return false</span><br><span class="line">        return true</span><br><span class="line">       7.约束条件七（地块名称，作物名称，季度）：</span><br><span class="line">       if 地块类型（地块名称） == “普通大棚”：</span><br><span class="line">          if 季度%2 == 1:</span><br><span class="line">             if 作物类型（作物名称） in 【蔬菜（豆类），蔬菜】：</span><br><span class="line">                 if 作物名称 in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                     return false</span><br><span class="line">             else：</span><br><span class="line">                 return false</span><br><span class="line">    if 季度 % 2 == 0：</span><br><span class="line">               if 作物名称 not in 【榆黄菇香菇白灵菇羊肚菌】：</span><br><span class="line">                   return false</span><br><span class="line">           return true</span><br><span class="line">       8. 约束条件八（地块名称，作物名称）：</span><br><span class="line">           if 地块类型（地块名称） == “智慧大棚”：</span><br><span class="line">              if 作物名称 in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                  return false</span><br><span class="line">             return true</span><br><span class="line"></span><br><span class="line">模型：地块 &gt;&gt; 季度  &gt;&gt; 作物类型 &gt;&gt; 种植亩数</span><br><span class="line">地块：54个地块</span><br><span class="line">季度：14个季度</span><br><span class="line">作物类型：41种</span><br><span class="line">种植亩数：x</span><br><span class="line"></span><br><span class="line">### 总利润 = 总收入 - 总成本</span><br><span class="line"></span><br><span class="line">总成本 = 种植成本（作物名称）* 单个作物总亩数（作物名称）</span><br><span class="line">总收入 =</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">接口函数：</span><br><span class="line">     interface1:输出作物类型（输入作物名称）</span><br><span class="line">     interface2:输出地块类型(列表)（作物名称）</span><br><span class="line">     interface3:输出地块类型（地块名称）</span><br><span class="line">     interface4:输出亩产量（作物名称，地块名称，季度）</span><br><span class="line">     interface5:输出种植成本（作物名称）</span><br><span class="line">     interface6:输出销售单价（作物名称）</span><br><span class="line">     interface7:输出地块面积（地块名称）</span><br><span class="line">    # interface8:输出find亩数（季度， 作物名称， 地块名称）</span><br><span class="line">     interface9:作物售量（作物名称）</span><br><span class="line">     interface10:种植季次（数字s）</span><br><span class="line">     interface11：地块名称（数字k）</span><br><span class="line">     interface12：作物名称（数字i）</span><br><span class="line">     interface13:作物产量（地块名称，作物名称，季度，亩数）</span><br><span class="line">     interface14:单个作物总亩数（作物名称）</span><br><span class="line">     interface15:地块类型（数字k）</span><br></pre></td></tr></table></figure>
+    <title>diary11</title>
+    <url>/2024/09/01/diary11/</url>
+    <content><![CDATA[<p>周日，晴。最近连续高强度打球和跑步明显改善了我的精神状态，昨天晚上连续深度睡了十个小时，感觉整个人都非常舒服。今天上午和一个维纳的研二学长打了两个半小时球，然后又睡两个小时左右（晕，还是太闲了）。</p>
+<p>学长很nice并且非常亲切，基本功也很扎实，还是老乡，本科在合工大，这又增加了我们的亲近感。</p>
+<p>不过今天去的时候遇到了农生的博士学长，他好像是请的私教培训，他之前一直跟我说不打球了，看来还是有热情的，下次找他约球。</p>
+<p>中午和微纳的学长吃了煲仔饭，他还说可以把他师姐送他的电动车出我，一起去修车铺看了下，发现三个电池电压少了百分之八左右，电瓶有可能要换一下，三百换电瓶还是有点亏吧，感觉还是再看看查查资料再说。然后我请他吃了DQ（diary queen），提拉米苏口感还不错哦，但是巧克力要是再多一点就好了。</p>
+<p>学长说他本科学物理的，跨保到电院，希望出国读物理博士，确实很强，还是多社交多交流舒服，不能在宿舍窝着发霉。</p>
+<p>晚上开始看cs61L，c++转码必学！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary2</title>
+    <url>/2024/08/09/diary2/</url>
+    <content><![CDATA[<p>周五，下午打球，今天把javaweb的vue部分看完，前端算是看完大半。</p>
+<p>晚上九点多躺在床上看小说没有拿手机，我爸妈姑都给我发消息打电话问我怎么了、为啥不回信息，感觉明明成年了还是跟小屁孩一样。</p>
+]]></content>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>diary3</title>
+    <url>/2024/08/12/diary3/</url>
+    <content><![CDATA[<p>周日，晴</p>
+<p>今天从凌晨两点看小说《恐怖复苏》看到下午八点多，中间睡了八个小时左右，不得不说真好看，叙事场景构思都是一流，人物刻画详细。</p>
+<p>今天上午跟爸妈定好周四去洛阳玩，帅帅也约定下周二来玩，感觉下周要破费，没法跟学姐约球了。</p>
+<p>晚上意外发现六七好像真的是姐姐，之前一直以为是温柔南梁哥哥（bushi）。</p>
+<p>今天vue脚手架看到router了，前端后端工程项目进行得有点起色，但是大部分内容还是晕晕乎乎的。</p>
 ]]></content>
   </entry>
   <entry>
@@ -93,19 +92,29 @@
 ]]></content>
   </entry>
   <entry>
-    <title>diary2</title>
-    <url>/2024/08/09/diary2/</url>
-    <content><![CDATA[<p>周五，下午打球，今天把javaweb的vue部分看完，前端算是看完大半。</p>
-<p>晚上九点多躺在床上看小说没有拿手机，我爸妈姑都给我发消息打电话问我怎么了、为啥不回信息，感觉明明成年了还是跟小屁孩一样。</p>
-]]></content>
-      <tags>
-        <tag>diary</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>diary5</title>
     <url>/2024/08/13/diary5/</url>
     <content><![CDATA[<p>周二，今天带帅帅参观校园。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary13</title>
+    <url>/2024/09/07/diary13/</url>
+    <content><![CDATA[<p>国赛失败，说多了都是泪，太累了，感觉是我这19年来经历过的压力最大最无力的三天。</p>
+<p>不过确实学到了很多，尤其是对于接口的理解。</p>
+<p>这几天精神状态都不太好，今晚调整一下，明早去打球，接下来开学前的几天不再搞高强度的了，确实累了，就写这么多吧p</p>
+<p>///// 这里放一下比赛写的文档吧，算是小小纪念一下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">this is a test document by donotknow.</span><br><span class="line">this is our 2024 MCM travel.</span><br><span class="line">目标：选择合适的农作物，制定策略</span><br><span class="line">条件：1201亩 34块</span><br><span class="line">平旱地，梯田，山坡地 每年一季</span><br><span class="line">水浇地 每年一季水稻 or 两季蔬菜</span><br><span class="line">每个大棚 0.6亩 作用：每年都可以种植两季作物。</span><br><span class="line">16个普通大棚适宜每年种植一季蔬菜和一季食用菌</span><br><span class="line">4个智慧大棚适宜每年种植两季蔬菜。</span><br><span class="line">同一地块（含大棚）每季可以合种不同的作物。</span><br><span class="line"></span><br><span class="line">要求：</span><br><span class="line">1.小于亩产量</span><br><span class="line">1.每种作物在同一地块（含大棚）都不能连续重茬种植</span><br><span class="line">2.每个地块（含大棚）的所有土地三年内至少种植一次豆类作物</span><br><span class="line">3.每种地块只能种植相应的作物</span><br><span class="line"></span><br><span class="line">**以上六个约束条件中后两个约束条件可以不考虑**</span><br><span class="line"></span><br><span class="line">数据集：</span><br><span class="line">excel1：地块名称	地块类型 地块面积/亩	说明</span><br><span class="line">excel2：sheet1 种植地块（同地块名称）作物编号 作物名称 作物类型</span><br><span class="line">种植面积/亩 种植季次</span><br><span class="line">sheet2 序号 作物编号 作物名称	地块类型 种植季次 亩产量/斤</span><br><span class="line">种植成本/(元/亩)	销售单价/(元/斤)</span><br><span class="line"></span><br><span class="line">问题1 ：假设：各种农作物的销售量、种植成本、亩产量和销售价格不变</span><br><span class="line"></span><br><span class="line">问题一可以采用线性规划模型，有41作物，34个地块</span><br><span class="line">决策变量</span><br><span class="line">目标：实现利益最大化（W） max（W）</span><br><span class="line">第一情况（pi）pi&lt;=pibefore</span><br><span class="line">变量：</span><br><span class="line">    作物名称：变量名：i范围：1，2，3，......,41</span><br><span class="line">     季度：变量名： s 范围：1,2,3,4,5,...,14季</span><br><span class="line">     地块名称：变量名：k 范围：1,2,...,34</span><br><span class="line">      亩数：x</span><br><span class="line">接口：</span><br><span class="line">     作物类型（作物名称）</span><br><span class="line">     地块类型（作物名称）</span><br><span class="line">     地块类型（地块名称）</span><br><span class="line">     #</span><br><span class="line">     地块面积（地块名称）</span><br><span class="line">     亩产量（作物名称，地块名称）</span><br><span class="line">     种植成本（作物名称）</span><br><span class="line">     销售单价（作物名称）</span><br><span class="line">     find亩数（季度， 作物名称， 地块名称）</span><br><span class="line">     作物售量（作物名称，亩数，地块名称）</span><br><span class="line">     作物产量（作物名称，季度，亩数）</span><br><span class="line">     单个作物总亩数（作物名称）</span><br><span class="line">接口：</span><br><span class="line">     三个约束条件对应三个函数</span><br><span class="line">    1. 约束条件一（季度，地块名称 ）：</span><br><span class="line">       lis_豆类=[黄豆,黑豆,红豆,绿豆,爬豆，豇豆刀豆芸豆]</span><br><span class="line">        if 季度 &gt; 5:</span><br><span class="line">            for i in range（季度-5， 季度＋1）：</span><br><span class="line">                find亩数（i，for j in lis_豆类，地块名称）.any</span><br><span class="line">                 2. 约束条件二（作物名称，地块名称，季度）:</span><br><span class="line">                    通过find亩数函数（）查找到上一季度亩数，</span><br><span class="line">                    if 季度 &gt; 1:</span><br><span class="line">    if find亩数 &gt; 0:</span><br><span class="line">                        return false</span><br><span class="line">                    else</span><br><span class="line">                 3.约束条件三（作物名称， 地块名称）：</span><br><span class="line">                 if interface3(地块名称) in interface2(作物名称):</span><br><span class="line">                     return true</span><br><span class="line">                 else:</span><br><span class="line">                     return false</span><br><span class="line">                     求当前情况的利润，和之前保存的最高利润比较，如果更高，保存</span><br><span class="line">                 找出最优方案（利润最高）：</span><br><span class="line">                 总利润w=亩数乘利润</span><br><span class="line">                 使w最大</span><br><span class="line">q</span><br><span class="line">q</span><br><span class="line">      4.约束条件四(地块名称，作物名称)：</span><br><span class="line">        if 地块类型（地块名称） in [平旱地，梯田，山坡地]：</span><br><span class="line">                 if 作物类型（作物名称） in [粮食(豆类)， 粮食] and 作物名称 ！= “水稻”：</span><br><span class="line">                   return true</span><br><span class="line">             return false</span><br><span class="line">    5.约束条件五（地块名称，作物名称，季度）：</span><br><span class="line">      if地块类型（地块名称） == “水浇地”：</span><br><span class="line">        if 季度 % 2 == 0：</span><br><span class="line">           if 作物名称 == 水稻：</span><br><span class="line">              return ！find （地块名称， 季度-1， for 作物名称 in [水稻，豇豆刀豆芸豆土豆西红柿茄子菠菜 青椒菜花包菜油麦菜小青菜黄瓜生菜 辣椒空心菜黄心菜芹菜大白菜白萝卜红萝卜]</span><br><span class="line">           if 作物类型（作物名称） in 【蔬菜（豆类），蔬菜】：</span><br><span class="line">                return！find（地块名称，季度 -1，水稻】</span><br><span class="line">         return true</span><br><span class="line">       6.约束条件六（地块名称，作物名称，季度）：</span><br><span class="line">       if 地块类型（地块名称） == “水浇地”：</span><br><span class="line">          if 季度%2 == 1:</span><br><span class="line">             if 作物类型（作物名称） in 【蔬菜（豆类），蔬菜】：</span><br><span class="line">                 if 作物名称 in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                     return false</span><br><span class="line">          if 季度 % 2 == 0：</span><br><span class="line">               if 作物类型（作物名称）not in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                   return false</span><br><span class="line">        return true</span><br><span class="line">       7.约束条件七（地块名称，作物名称，季度）：</span><br><span class="line">       if 地块类型（地块名称） == “普通大棚”：</span><br><span class="line">          if 季度%2 == 1:</span><br><span class="line">             if 作物类型（作物名称） in 【蔬菜（豆类），蔬菜】：</span><br><span class="line">                 if 作物名称 in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                     return false</span><br><span class="line">             else：</span><br><span class="line">                 return false</span><br><span class="line">    if 季度 % 2 == 0：</span><br><span class="line">               if 作物名称 not in 【榆黄菇香菇白灵菇羊肚菌】：</span><br><span class="line">                   return false</span><br><span class="line">           return true</span><br><span class="line">       8. 约束条件八（地块名称，作物名称）：</span><br><span class="line">           if 地块类型（地块名称） == “智慧大棚”：</span><br><span class="line">              if 作物名称 in 【大白菜，白萝卜，红萝卜】：</span><br><span class="line">                  return false</span><br><span class="line">             return true</span><br><span class="line"></span><br><span class="line">模型：地块 &gt;&gt; 季度  &gt;&gt; 作物类型 &gt;&gt; 种植亩数</span><br><span class="line">地块：54个地块</span><br><span class="line">季度：14个季度</span><br><span class="line">作物类型：41种</span><br><span class="line">种植亩数：x</span><br><span class="line"></span><br><span class="line">### 总利润 = 总收入 - 总成本</span><br><span class="line"></span><br><span class="line">总成本 = 种植成本（作物名称）* 单个作物总亩数（作物名称）</span><br><span class="line">总收入 =</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">接口函数：</span><br><span class="line">     interface1:输出作物类型（输入作物名称）</span><br><span class="line">     interface2:输出地块类型(列表)（作物名称）</span><br><span class="line">     interface3:输出地块类型（地块名称）</span><br><span class="line">     interface4:输出亩产量（作物名称，地块名称，季度）</span><br><span class="line">     interface5:输出种植成本（作物名称）</span><br><span class="line">     interface6:输出销售单价（作物名称）</span><br><span class="line">     interface7:输出地块面积（地块名称）</span><br><span class="line">    # interface8:输出find亩数（季度， 作物名称， 地块名称）</span><br><span class="line">     interface9:作物售量（作物名称）</span><br><span class="line">     interface10:种植季次（数字s）</span><br><span class="line">     interface11：地块名称（数字k）</span><br><span class="line">     interface12：作物名称（数字i）</span><br><span class="line">     interface13:作物产量（地块名称，作物名称，季度，亩数）</span><br><span class="line">     interface14:单个作物总亩数（作物名称）</span><br><span class="line">     interface15:地块类型（数字k）</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>diary7</title>
+    <url>/2024/08/21/diary7/</url>
+    <content><![CDATA[<p>周三，大雨。</p>
+<p>今天睡了一天，还是太懒散了，下午起来学一下数据预处理，国赛还是得老老实实学，不过确实很有用，我能感觉到这些知识以后一定会用上。</p>
+<p>下午暑期科研实习的导师发信息问有没有什么不懂的地方可以指出，讲真的，我确实不太想搞了，强化学习我还是太早了，目前非常忙，我估计要再等个两个月我才有空学强化学习，现在没空管这个项目。</p>
+<p>下午航模队吴老师发信息邀请加入新群，但是大群里没有发二维码，我怀疑是因为一部分大群的同学不算作正式队员，所以老师不希望都加新群里，但是我不想参加航模队了，我觉得这个社团虽然很有魅力，但是不是我目前渴望的。不过社团还是很有前景的，以后无人机一定是城市发展的主要方向之一，从送货到交通，这是一个很有潜力和前景的方向。但是总之我现在还是没有太大的兴趣。</p>
 ]]></content>
   </entry>
   <entry>
@@ -119,29 +128,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>diary7</title>
-    <url>/2024/08/21/diary7/</url>
-    <content><![CDATA[<p>周三，大雨。</p>
-<p>今天睡了一天，还是太懒散了，下午起来学一下数据预处理，国赛还是得老老实实学，不过确实很有用，我能感觉到这些知识以后一定会用上。</p>
-<p>下午暑期科研实习的导师发信息问有没有什么不懂的地方可以指出，讲真的，我确实不太想搞了，强化学习我还是太早了，目前非常忙，我估计要再等个两个月我才有空学强化学习，现在没空管这个项目。</p>
-<p>下午航模队吴老师发信息邀请加入新群，但是大群里没有发二维码，我怀疑是因为一部分大群的同学不算作正式队员，所以老师不希望都加新群里，但是我不想参加航模队了，我觉得这个社团虽然很有魅力，但是不是我目前渴望的。不过社团还是很有前景的，以后无人机一定是城市发展的主要方向之一，从送货到交通，这是一个很有潜力和前景的方向。但是总之我现在还是没有太大的兴趣。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/06/28/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>diary8</title>
     <url>/2024/08/23/diary8/</url>
     <content><![CDATA[<p>周五 晴</p>
@@ -151,6 +137,21 @@
 <p><em>刚刚忘了一些，补充一下：</em></p>
 <p>今天一个室友应该坐上回国的飞机了，我估计明天就回来了，寝室楼也变得吵起来了，还是好希望能有一个安静的环境。</p>
 <p>还有一件事忘了，想不起来不写了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>essay1</title>
+    <url>/2024/08/23/essay1/</url>
+    <content><![CDATA[<p><strong><em># 书评：《神秘复苏》  原名：《恐怖复苏》 小说作者：佛前献花</em></strong></p>
+<p><strong><em># 类型：恐怖、末世、拯救、中二（略微）</em></strong></p>
+<p>小说一共1567章，共五百万字，讲述了在一个灵异复苏的世界，主角杨间驾驭厉鬼、寻找灵异的真相并且救赎世界的故事。小说分为《如坠地狱》、《此世乃无间》、《持饿鬼身，行菩萨事》、《结尾卷》四卷，作者没有明确分卷，不过总体来看还是起承转合。</p>
+
+<p>我觉得小说最大亮点就是情节紧凑和作者对死亡的思考，小说中灵异发生一环扣一环，以杨间的视角，从敲门鬼开始如同多米诺骨牌崩塌，事件一个连接下一个，几乎无水的地方，可能美中不足的情节就是小说末端总部和国外的对抗存在水字数的环节，这一段情节也是我全书唯一没有仔细阅读直接扫过的部分，但是这一段也举足轻重，如果不是对抗导致恶鬼复苏，杨间也不会继续控制新的鬼，后面解决灵异复苏也很难实现。</p>
+
+<p><p>作者对于死亡的认知是记忆的消失和人格的改变，当然人格什么的太过玄幻，我并不赞同，我现在感觉人的存在应该分为两部分，一部分是肉体，另一部分是神经网络，其实两者本质是附属关系，但是神经元的特殊性让电信号在肉体的一小部分发生有规律的作用进而形成了思维，换句话说，我感觉人的本体应该就是无数神经元组成的网络，记忆则是类似电脑中的寄存器，只是某些特殊分化的神经元罢了，记忆＋思考方式才是本质。</p>
+<p><p>换句话说，如果把一个人的记忆保存下来，在构建一个相同的大脑皮层，那么这就是一个缺失了身体的本人。思考方式就是函数，也就是机器学习里的sigmoid函数，外界环境和记忆是输入，至于输出完全是一个随机的概率行为，这个输出又会进一步影响函数，比如人接触新事物会建立新突触。这件事也是受到作者的启发，不过还是多谈谈这本书，毕竟是书评。</p>
+<p><p><strong><i>摘录一部分比较震撼的片段，摘录的都是结尾的，主要是因为书太长，看的时间比较长（将近两周），前面的懒得找了。</p>
+<p><strong><strong>*</strong></strong>行，00：30了，这次书评就到这了，我也得早点休息明天继续准备国赛。<strong><strong>*</strong></strong></p>
 ]]></content>
   </entry>
   <entry>
@@ -189,18 +190,47 @@
 ]]></content>
   </entry>
   <entry>
-    <title>essay1</title>
-    <url>/2024/08/23/essay1/</url>
-    <content><![CDATA[<p><strong><em># 书评：《神秘复苏》  原名：《恐怖复苏》 小说作者：佛前献花</em></strong></p>
-<p><strong><em># 类型：恐怖、末世、拯救、中二（略微）</em></strong></p>
-<p>小说一共1567章，共五百万字，讲述了在一个灵异复苏的世界，主角杨间驾驭厉鬼、寻找灵异的真相并且救赎世界的故事。小说分为《如坠地狱》、《此世乃无间》、《持饿鬼身，行菩萨事》、《结尾卷》四卷，作者没有明确分卷，不过总体来看还是起承转合。</p>
-
-<p>我觉得小说最大亮点就是情节紧凑和作者对死亡的思考，小说中灵异发生一环扣一环，以杨间的视角，从敲门鬼开始如同多米诺骨牌崩塌，事件一个连接下一个，几乎无水的地方，可能美中不足的情节就是小说末端总部和国外的对抗存在水字数的环节，这一段情节也是我全书唯一没有仔细阅读直接扫过的部分，但是这一段也举足轻重，如果不是对抗导致恶鬼复苏，杨间也不会继续控制新的鬼，后面解决灵异复苏也很难实现。</p>
-
-<p><p>作者对于死亡的认知是记忆的消失和人格的改变，当然人格什么的太过玄幻，我并不赞同，我现在感觉人的存在应该分为两部分，一部分是肉体，另一部分是神经网络，其实两者本质是附属关系，但是神经元的特殊性让电信号在肉体的一小部分发生有规律的作用进而形成了思维，换句话说，我感觉人的本体应该就是无数神经元组成的网络，记忆则是类似电脑中的寄存器，只是某些特殊分化的神经元罢了，记忆＋思考方式才是本质。</p>
-<p><p>换句话说，如果把一个人的记忆保存下来，在构建一个相同的大脑皮层，那么这就是一个缺失了身体的本人。思考方式就是函数，也就是机器学习里的sigmoid函数，外界环境和记忆是输入，至于输出完全是一个随机的概率行为，这个输出又会进一步影响函数，比如人接触新事物会建立新突触。这件事也是受到作者的启发，不过还是多谈谈这本书，毕竟是书评。</p>
-<p><p><strong><i>摘录一部分比较震撼的片段，摘录的都是结尾的，主要是因为书太长，看的时间比较长（将近两周），前面的懒得找了。</p>
-<p><strong><strong>*</strong></strong>行，00：30了，这次书评就到这了，我也得早点休息明天继续准备国赛。<strong><strong>*</strong></strong></p>
+    <title>Hello World</title>
+    <url>/2024/06/28/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>study1</title>
+    <url>/2024/08/24/study1/</url>
+    <content><![CDATA[<h1 id="maven学习"><a href="#maven学习" class="headerlink" title="maven学习"></a>maven学习</h1><p>定义：java项目管理工具</p>
+<p>工作流程：</p>
+<p><img src="image/study1/1724496968138.png" alt="1724496968138"></p>
+<p>pom：project object model 定义：pom是一个maven的工作配置文件，指定了maven的工作规则。</p>
+<p><img src="image/study1/1724507069336.png" alt="1724507069336"></p>
+<h2 id="基于idea编辑器的maven的基本使用"><a href="#基于idea编辑器的maven的基本使用" class="headerlink" title="基于idea编辑器的maven的基本使用"></a>基于idea编辑器的maven的基本使用</h2><h3 id="引用依赖"><a href="#引用依赖" class="headerlink" title="引用依赖"></a>引用依赖</h3><p>在pom.xml中添加如下代码块，重新加载</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;ch.qos.logback&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;logback-classic&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;1.5.6&lt;/version&gt;</span><br><span class="line">      </span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+<p>groupId：包所有组织名称</p>
+<p>artifactId：包名称</p>
+<p>version：包版本</p>
+<h3 id="排除依赖"><a href="#排除依赖" class="headerlink" title="排除依赖"></a>排除依赖</h3><p>在pom.xml中添加如下代码块，重新加载</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;exclusions&gt;</span><br><span class="line">    &lt;exclusion&gt;</span><br><span class="line">        &lt;groupId&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;</span><br><span class="line">        </span><br><span class="line">        &lt;/artifactId&gt;</span><br><span class="line">    &lt;/exclusion&gt;</span><br><span class="line">&lt;/exclusions&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="依赖范围"><a href="#依赖范围" class="headerlink" title="依赖范围"></a>依赖范围</h3><p>依赖的jar包默认全项目范围，可以在dependency中限制范围</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// for example:compile(默认)，test ,provided, runtime</span><br><span class="line">&lt;scope&gt; test&lt;/scope&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>study2</title>
+    <url>/2024/08/25/study2/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>title:test</title>
+    <url>/2024/08/08/title-test/</url>
+    <content><![CDATA[<p>this is a test text.Because i donot know how hexo works, i need to test.</p>
 ]]></content>
   </entry>
   <entry>
@@ -255,36 +285,6 @@
     <title>第一个文章</title>
     <url>/2024/06/28/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<p>准备好和我一起旅行了吗？</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>study1</title>
-    <url>/2024/08/24/study1/</url>
-    <content><![CDATA[<h1 id="maven学习"><a href="#maven学习" class="headerlink" title="maven学习"></a>maven学习</h1><p>定义：java项目管理工具</p>
-<p>工作流程：</p>
-<p><img src="image/study1/1724496968138.png" alt="1724496968138"></p>
-<p>pom：project object model 定义：pom是一个maven的工作配置文件，指定了maven的工作规则。</p>
-<p><img src="image/study1/1724507069336.png" alt="1724507069336"></p>
-<h2 id="基于idea编辑器的maven的基本使用"><a href="#基于idea编辑器的maven的基本使用" class="headerlink" title="基于idea编辑器的maven的基本使用"></a>基于idea编辑器的maven的基本使用</h2><h3 id="引用依赖"><a href="#引用依赖" class="headerlink" title="引用依赖"></a>引用依赖</h3><p>在pom.xml中添加如下代码块，重新加载</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;ch.qos.logback&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;logback-classic&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;1.5.6&lt;/version&gt;</span><br><span class="line">      </span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
-<p>groupId：包所有组织名称</p>
-<p>artifactId：包名称</p>
-<p>version：包版本</p>
-<h3 id="排除依赖"><a href="#排除依赖" class="headerlink" title="排除依赖"></a>排除依赖</h3><p>在pom.xml中添加如下代码块，重新加载</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;exclusions&gt;</span><br><span class="line">    &lt;exclusion&gt;</span><br><span class="line">        &lt;groupId&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;</span><br><span class="line">        </span><br><span class="line">        &lt;/artifactId&gt;</span><br><span class="line">    &lt;/exclusion&gt;</span><br><span class="line">&lt;/exclusions&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="依赖范围"><a href="#依赖范围" class="headerlink" title="依赖范围"></a>依赖范围</h3><p>依赖的jar包默认全项目范围，可以在dependency中限制范围</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// for example:compile(默认)，test ,provided, runtime</span><br><span class="line">&lt;scope&gt; test&lt;/scope&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>study2</title>
-    <url>/2024/08/25/study2/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>title:test</title>
-    <url>/2024/08/08/title-test/</url>
-    <content><![CDATA[<p>this is a test text.Because i donot know how hexo works, i need to test.</p>
 ]]></content>
   </entry>
 </search>
