@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>nodejs_study | donotknowsjtu 的个人博客</title><meta name="author" content="dontknowsjtu"><meta name="copyright" content="dontknowsjtu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="代码仓库更新在：github fs模块attention：js的相对路径都是相对当前运行环境的工作目录，而不是相对该js文件的目录 引入const fs = require('fs'); 写入异步写入：定义：写入操作执行时同时进行后面语句的执行，效率高 同步写入：定义：写入操作执行时等待写入操作执行完再执行后面语句，效率低 异步写入example： fs.writeFile(&amp;#x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nodejs_study">
+<meta property="og:url" content="https://donotknowsjtu.github.io/2024/09/20/nodejs_study/index.html">
+<meta property="og:site_name" content="donotknowsjtu 的个人博客">
+<meta property="og:description" content="代码仓库更新在：github fs模块attention：js的相对路径都是相对当前运行环境的工作目录，而不是相对该js文件的目录 引入const fs = require('fs'); 写入异步写入：定义：写入操作执行时同时进行后面语句的执行，效率高 同步写入：定义：写入操作执行时等待写入操作执行完再执行后面语句，效率低 异步写入example： fs.writeFile(&amp;#x">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://donotknowsjtu.github.io/image/preview2.jpg">
+<meta property="article:published_time" content="2024-09-20T14:16:37.000Z">
+<meta property="article:modified_time" content="2024-09-21T09:36:31.427Z">
+<meta property="article:author" content="dontknowsjtu">
+<meta property="article:tag" content="study">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://donotknowsjtu.github.io/image/preview2.jpg"><link rel="shortcut icon" href="/image/preview2.jpg"><link rel="canonical" href="https://donotknowsjtu.github.io/2024/09/20/nodejs_study/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"Z7A3XW4R2I","apiKey":"12db1ad54372045549ef465881c17e743","indexName":"my-hexo-blog","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":300},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'nodejs_study',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2024-09-21 17:36:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/modify.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/image/preview2.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页(home)</span></a></div><div class="menus_item"><a class="site-page" href="/docshare/"><i class="fa-fw fa fa-file-text"></i><span> 共享文档(docshare)</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接(Link)</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About me</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/image/background3.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="donotknowsjtu 的个人博客"><img class="site-icon" src="/image/logo.gif"><span class="site-name">donotknowsjtu 的个人博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页(home)</span></a></div><div class="menus_item"><a class="site-page" href="/docshare/"><i class="fa-fw fa fa-file-text"></i><span> 共享文档(docshare)</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接(Link)</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About me</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">nodejs_study</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-20T14:16:37.000Z" title="发表于 2024-09-20 22:16:37">2024-09-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-21T09:36:31.427Z" title="更新于 2024-09-21 17:36:31">2024-09-21</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="nodejs_study"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><div class="top-img" style="background-image: url('/image/background3.jpg');"></div><article class="post-content" id="article-container"><p>代码仓库更新在：<a target="_blank" rel="noopener" href="https://github.com/donotknowsjtu/nodejs_study" title="click">github</a></p>
+<h2 id="fs模块"><a href="#fs模块" class="headerlink" title="fs模块"></a>fs模块</h2><p><strong>attention：js的相对路径都是相对当前运行环境的工作目录，而不是相对该js文件的目录</strong></p>
+<h3 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h3><p><code>const fs = require('fs');</code></p>
+<h3 id="写入"><a href="#写入" class="headerlink" title="写入"></a>写入</h3><p>异步写入：定义：写入操作执行时同时进行后面语句的执行，效率高</p>
+<p>同步写入：定义：写入操作执行时等待写入操作执行完再执行后面语句，效率低</p>
+<p>异步写入example：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">fs.writeFile('./hello.txt', 'Hello from Node.js!',err =&gt; {</span><br><span class="line">    // err write wrong;</span><br><span class="line">    if(err){</span><br><span class="line">        console.log('error with writing file');</span><br><span class="line">        return;</span><br><span class="line">    }</span><br><span class="line">    console.log('file written successfully');</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+<p>同步写入：将writeFile改为writeFileSync</p>
+<h3 id="追加"><a href="#追加" class="headerlink" title="追加"></a>追加</h3><ol>
+<li>方式一：appendFile</li>
+<li>方式二：在writeFile的形式参数中加上{fag:’a’}</li>
+</ol>
+<p>for example:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">const fs = require('fs');</span><br><span class="line">fs.writeFile('./hello.txt', 'Hello from Node.js!',{flag:'a'},err =&gt; {</span><br><span class="line">    // err write wrong;</span><br><span class="line">    if(err){</span><br><span class="line">        console.log('error with writing file');</span><br><span class="line">        return;</span><br><span class="line">    }</span><br><span class="line">    console.log('file written successfully');</span><br><span class="line">});</span><br><span class="line">fs.appendFile('./hello.txt', '\r\nhello', err =&gt; {</span><br><span class="line">    if(err){</span><br><span class="line">        console.log('error with writing file');</span><br><span class="line">        return;</span><br><span class="line">    }</span><br><span class="line">    console.log('file written successfully');</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="流式写入"><a href="#流式写入" class="headerlink" title="流式写入"></a>流式写入</h3><h4 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h4><p><code>const ws = fs.createWritestream()</code></p>
+<h4 id="写入-1"><a href="#写入-1" class="headerlink" title="写入"></a>写入</h4><p><code>ws.write()</code></p>
+<h4 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h4><p><code>ws.end()或ws.close()</code></p>
+<p>可以不加结束语句</p>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><p>流失写入方式适合大文件或频繁操作文件，通过减少打开文件的次数来提高速度</p>
+<h3 id="读取"><a href="#读取" class="headerlink" title="读取"></a>读取</h3><p>readfile()</p>
+<ol>
+<li>路径</li>
+<li>参数（可选）</li>
+<li>回调函数（error 和 data）</li>
+</ol>
+<p>回调的data是buffer，需要通过tostring方法将其转换为string格式便于阅读</p>
+<p>readflieSync（）是同步读取方法</p>
+<h4 id="流式读取"><a href="#流式读取" class="headerlink" title="流式读取"></a>流式读取</h4><p>createReadStream，作用：提高读取效率</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">const fs = require('fs');</span><br><span class="line">const rs = fs.createReadStream('hello.txt');</span><br><span class="line">rs.on('data',chunk =&gt; {</span><br><span class="line">    console.log('Data: ',chunk.toString());</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<p>每次读取65536bit，64kb</p>
+<p>end可选事件</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">rs.on('end',() =&gt; {</span><br><span class="line">    console.log('Read stream finished');</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<p><em>个人理解流式写入和读取都是在fs模块的基础上新建对象，然后读取需要绑定事件，写入直接调用方法；</em></p>
+<p><em>然而直接写入写出可以直接用fs模块新建对象，然后调用方法进行写入写出</em></p>
+<p>但是直接写入写出是将文件全部内容先读出再全部写入，相比之下，流式读取写入则是一边读取一边写入，节约了内存占用</p>
+<h3 id="重命名和移动"><a href="#重命名和移动" class="headerlink" title="重命名和移动"></a>重命名和移动</h3><p>rename方法，参数包括原路径，末路径，回调函数</p>
+<p>所谓的重命名和移动就是更改源文件的路径，本质相同</p>
+<p>同步的方法就是加上Sync</p>
+<p>for example</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">// rename</span><br><span class="line">fs.rename('hello.txt', 'rename.txt', err=&gt;{</span><br><span class="line">    if(err){</span><br><span class="line">        console.log('rename failed');</span><br><span class="line">    }</span><br><span class="line">    else{</span><br><span class="line">        console.log('rename successful');</span><br><span class="line">    }</span><br><span class="line">})</span><br><span class="line">// move</span><br><span class="line">fs.rename('rename.txt','rename/rename.txt',error =&gt;{</span><br><span class="line">    if(error){</span><br><span class="line">        console.log('move failed');</span><br><span class="line">    }</span><br><span class="line">    else{</span><br><span class="line">        console.log('move successful');</span><br><span class="line">    }</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>unlink和rm两种方法,参数为文件路径和回调函数</p>
+<p>同步就是加上Sync</p>
+<p>for example</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">fs.unlink('hellw2.txt', err =&gt; {</span><br><span class="line">    if(err){</span><br><span class="line">        console.log('delete failed');</span><br><span class="line">    }</span><br><span class="line">    else{</span><br><span class="line">        console.log('delete sussessful');</span><br><span class="line">    }</span><br><span class="line">})</span><br><span class="line">fs.rm('hellw2.txt', err =&gt; {</span><br><span class="line">    if(err){</span><br><span class="line">        console.log('delete failed');</span><br><span class="line">    }</span><br><span class="line">    else{</span><br><span class="line">        console.log('delete sussessful');</span><br><span class="line">    }</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="创建文件（夹）"><a href="#创建文件（夹）" class="headerlink" title="创建文件（夹）"></a>创建文件（夹）</h3><p>mkdir方法，传参：目标directory路径，回调函数</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">fs.mkdir('test', err =&gt; {</span><br><span class="line">    if(err){</span><br><span class="line">        console.log('create failed');</span><br><span class="line">    }</span><br><span class="line">    else{</span><br><span class="line">        console.log('create successful');</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line">)</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="查看文件夹file"><a href="#查看文件夹file" class="headerlink" title="查看文件夹file"></a>查看文件夹file</h4><p>readdir方法，传参：目标directory路径，回调函数</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">fs.readdir('test', (err, files) =&gt; {</span><br><span class="line">    if(err){</span><br><span class="line">        console.log('read failed');</span><br><span class="line">    }</span><br><span class="line">    else{</span><br><span class="line">        console.log('read successful');</span><br><span class="line">        console.log(files);</span><br><span class="line">    }</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="删除文件夹"><a href="#删除文件夹" class="headerlink" title="删除文件夹"></a>删除文件夹</h4><p>rm方法，传参：目标文件路径、回调函数</p>
+<p>注：rmdir方法将要被移除</p>
+<h3 id="查看文件状态"><a href="#查看文件状态" class="headerlink" title="查看文件状态"></a>查看文件状态</h3><p>stat方法，传参：目标文件路径、回调函数</p>
+<p>for example</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">fs.stat('read.js', (err, stats) =&gt; {</span><br><span class="line">    if(err){</span><br><span class="line">        console.log('status failed');</span><br><span class="line">    }</span><br><span class="line">    else{</span><br><span class="line">        console.log('status successful');</span><br><span class="line">        console.log(stats);</span><br><span class="line">    }</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<p>stat输出如下：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">Stats {</span><br><span class="line">  dev: 1084496056,</span><br><span class="line">  mode: 33206,</span><br><span class="line">  nlink: 1,</span><br><span class="line">  uid: 0,</span><br><span class="line">  gid: 0,</span><br><span class="line">  rdev: 0,</span><br><span class="line">  blksize: 4096,</span><br><span class="line">  ino: 562949953449871,</span><br><span class="line">  size: 212,</span><br><span class="line">  blocks: 0,</span><br><span class="line">  atimeMs: 1726888786803.9666,</span><br><span class="line">  mtimeMs: 1726888783851.079,</span><br><span class="line">  ctimeMs: 1726888783851.079,</span><br><span class="line">  birthtimeMs: 1726843900323.625,</span><br><span class="line">  atime: 2024-09-21T03:19:46.804Z,</span><br><span class="line">  mtime: 2024-09-21T03:19:43.851Z,</span><br><span class="line">  ctime: 2024-09-21T03:19:43.851Z,</span><br><span class="line">  birthtime: 2024-09-20T14:51:40.324Z</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>birthtime:文件创建时间</p>
+<p>mtime：最后一次修改时间</p>
+<p>ctime：最后一次更新状态时间</p>
+<p>atime：最后一次访问时间</p>
+<p>按照时间先后排序：b早于m早于c早于a</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://donotknowsjtu.github.io">dontknowsjtu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://donotknowsjtu.github.io/2024/09/20/nodejs_study/">https://donotknowsjtu.github.io/2024/09/20/nodejs_study/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://donotknowsjtu.github.io" target="_blank">donotknowsjtu 的个人博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/study/">study</a></div><div class="post_share"><div class="social-share" data-image="/image/preview2.jpg" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer=""></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/09/19/diary16/" title="diary16"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">diary16</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/08/24/study1/" title="maven学习"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-08-24</div><div class="title">maven学习</div></div></a></div><div><a href="/2024/09/18/study3/" title="cpp学习"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-09-18</div><div class="title">cpp学习</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/image/preview2.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info__name">dontknowsjtu</div><div class="author-info__description">donotknowsjtu 的小世界，不定期发电</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/donotknowsjtu" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:sjtuzsy157541@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/image/weixin.jpg" target="_blank" title="Wechat"><i class="fab fa-weixin"></i></a><a class="social-icon" href="/image/qq_dk.jpg" target="_blank" title="QQ"><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#fs%E6%A8%A1%E5%9D%97"><span class="toc-number">1.</span> <span class="toc-text">fs模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E5%85%A5"><span class="toc-number">1.1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E5%85%A5"><span class="toc-number">1.2.</span> <span class="toc-text">写入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%BD%E5%8A%A0"><span class="toc-number">1.3.</span> <span class="toc-text">追加</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E5%BC%8F%E5%86%99%E5%85%A5"><span class="toc-number">1.4.</span> <span class="toc-text">流式写入</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.4.1.</span> <span class="toc-text">创建对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%99%E5%85%A5-1"><span class="toc-number">1.4.2.</span> <span class="toc-text">写入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%93%E6%9D%9F"><span class="toc-number">1.4.3.</span> <span class="toc-text">结束</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E7%82%B9"><span class="toc-number">1.4.4.</span> <span class="toc-text">特点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96"><span class="toc-number">1.5.</span> <span class="toc-text">读取</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E5%BC%8F%E8%AF%BB%E5%8F%96"><span class="toc-number">1.5.1.</span> <span class="toc-text">流式读取</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%91%BD%E5%90%8D%E5%92%8C%E7%A7%BB%E5%8A%A8"><span class="toc-number">1.6.</span> <span class="toc-text">重命名和移动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4"><span class="toc-number">1.7.</span> <span class="toc-text">删除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%EF%BC%88%E5%A4%B9%EF%BC%89"><span class="toc-number">1.8.</span> <span class="toc-text">创建文件（夹）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%A4%B9file"><span class="toc-number">1.8.1.</span> <span class="toc-text">查看文件夹file</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">1.8.2.</span> <span class="toc-text">删除文件夹</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E7%8A%B6%E6%80%81"><span class="toc-number">1.9.</span> <span class="toc-text">查看文件状态</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/20/nodejs_study/" title="nodejs_study">nodejs_study</a><time datetime="2024-09-20T14:16:37.000Z" title="发表于 2024-09-20 22:16:37">2024-09-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/19/diary16/" title="diary16">diary16</a><time datetime="2024-09-19T13:56:21.000Z" title="发表于 2024-09-19 21:56:21">2024-09-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/18/study3/" title="cpp学习">cpp学习</a><time datetime="2024-09-18T11:55:08.000Z" title="发表于 2024-09-18 19:55:08">2024-09-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/16/diary15/" title="diary15">diary15</a><time datetime="2024-09-16T08:27:12.000Z" title="发表于 2024-09-16 16:27:12">2024-09-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/13/diary14/" title="diary14">diary14</a><time datetime="2024-09-13T08:09:22.000Z" title="发表于 2024-09-13 16:09:22">2024-09-13</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">©2024.6.28 - 2024 By dontknowsjtu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>function loadGiscus () {
+  let nowTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
+
+  const config = Object.assign({
+    src: 'https://giscus.app/client.js',
+    'data-repo': 'donotknowsjtu/donotknowsjtu.github.io',
+    'data-repo-id': 'R_kgDOMOrkfw',
+    'data-category-id': 'DIC_kwDOMOrkf84CgesQ',
+    'data-mapping': 'pathname',
+    'data-theme': nowTheme,
+    'data-reactions-enabled': '1',
+    crossorigin: 'anonymous',
+    async: true
+  },null)
+
+  let ele = document.createElement('script')
+  for (let key in config) {
+    ele.setAttribute(key, config[key])
+  }
+  document.getElementById('giscus-wrap').insertAdjacentElement('afterbegin',ele)
+}
+
+function changeGiscusTheme () {
+  const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
+
+  function sendMessage(message) {
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (!iframe) return;
+    iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+  }
+
+  sendMessage({
+    setConfig: {
+      theme: theme
+    }
+  });
+}
+
+if ('Giscus' === 'Giscus' || !true) {
+  if (true) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+  else loadGiscus()
+} else {
+  function loadOtherComment () {
+    loadGiscus()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></body></html>
